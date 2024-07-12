@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Front Page</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("/backgroundpic.png");
+}
+p{
+    color:blanchedalmond;
+}
+.container .boxes a{
+    text-align: center;
+    color:#941111;
+}
+
+.title {
+    font-size: 2em;
+    color:white;
+    margin-bottom: 20px;
+    animation: fadeIn 2s;
+}
+
+.profile-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color:white;
+    margin-bottom: 30px;
+    animation: slideIn 2s;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username {
+    font-size: 1.2em;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box1 {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b16b6b;
+    border: 1px solid #941111;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(204, 16, 16, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+    animation: fadeInUp 2s;
+    background-image: url("/g3.jpg");
+}
+.box2{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b16b6b;
+    border: 1px solid #941111;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(204, 16, 16, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+    animation: fadeInUp 2s;
+    background-image: url("/w.jpg");
+}
+.box3 {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b16b6b;
+    border: 1px solid #941111;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(204, 16, 16, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+    animation: fadeInUp 2s;
+    background-image: url("/w2.jpg");
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Welcome to Our Service</h1>
+        <div class="profile-bar">
+            <img src="/2.jfif" alt="Profile Picture" class="profile-pic">
+            <span class="username">MANIKANTA</span>
+        </div>
+        <div class="boxes">
+            <a href="hotal.html">
+                <div class="box1" id="room-booking" ><p>Room Booking</p></div>
+            </a>
+            <a href="/Food Website/food.html">
+                <div class="box2" id="food-order" ><p>Food Order</p>
+                </div>
+            </a>
+            <div class="box3" id="groceries"><P>Groceries</P></div>
+        </div>
+    </div>
+</body>
+</html>
